@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
   });
 });
 
+app.post('/', (req, res) => {
+  res.send({message: 'You requested to send the following: ' + req.toString()});
+})
+
 module.exports = app;
